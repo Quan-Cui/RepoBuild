@@ -1,5 +1,7 @@
 #' create.repo
 #'
+#' Create a folder structure within your project path.including data, input, output, R etc.
+#'
 #' @param proj_name R project folder name
 #' @param proj_path R project path, end without /
 #'
@@ -41,6 +43,27 @@ create.repo <- function(proj_name = "abc9368-2022",
       message(paste("Done. Created subfolders for an exisiting folder", proj_folder))
     }
   )
+}
+
+
+
+#' chatgpt
+#'
+#' When i ask chatgpt about coding question, i need to give it a sample of  my data
+#'
+#' @param mydata my current datatable that has problem need to ask chatgpt
+#' @param n how many rows i want to send to chatgpt
+#'
+#' @return a JSON object that chatgpt can receive
+#' @export
+#'
+#' @examples  chatgpt(iris, 1)
+#' @importFrom magrittr %>%
+#' @importFrom dplyr slice_sample
+chatgpt <- function(mydata, n){
+  mydata <- mydata %>% slice_sample(n = n, replace = FALSE)
+  mydata <- jsonlite::toJSON(mydata, pretty = TRUE)
+  return(mydata)
 }
 
 

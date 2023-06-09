@@ -15,7 +15,7 @@ create.repo(proj_name = "abc9368-2022", proj_path = "C:/QuanGit")
 a folder full with sub folders for R project developing use
 }
 \description{
-create.repo
+Create a folder structure within your project path.including data, input, output, R etc.
 }
 \examples{
 create.repo(proj_name = "abc9368-2022", proj_path = "C:/Git")
