@@ -4,12 +4,10 @@
 \alias{create.repo}
 \title{create.repo}
 \usage{
-create.repo(proj_name = "abc9368-2022", proj_path = "C:/QuanGit")
+create.repo(proj_folder = here::here())
 }
 \arguments{
-\item{proj_name}{R project folder name}
-
-\item{proj_path}{R project path, end without /}
+\item{proj_folder}{R project folder name, default here::here()}
 }
 \value{
 a folder full with sub folders for R project developing use
@@ -18,5 +16,5 @@ a folder full with sub folders for R project developing use
 Create a folder structure within your project path.including data, input, output, R etc.
 }
 \examples{
-create.repo(proj_name = "abc9368-2022", proj_path = "C:/Git")
+create.repo()
 }

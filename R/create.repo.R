@@ -2,19 +2,15 @@
 #'
 #' Create a folder structure within your project path.including data, input, output, R etc.
 #'
-#' @param proj_name R project folder name
-#' @param proj_path R project path, end without /
+#' @param proj_folder R project folder name, default here::here()
 #'
 #' @return a folder full with sub folders for R project developing use
 #' @export
 #'
-#' @examples create.repo(proj_name = "abc9368-2022", proj_path = "C:/Git")
+#' @examples create.repo()
 
 
-create.repo <- function(proj_name = "abc9368-2022",
-                        proj_path = "C:/QuanGit"){
-
-  proj_folder <- paste0(proj_path, "/", proj_name)
+create.repo <- function(proj_folder = here::here()){
   invisible(
     if (!dir.exists(proj_folder)){
       dir.create(proj_folder)
@@ -44,9 +40,4 @@ create.repo <- function(proj_name = "abc9368-2022",
     }
   )
 }
-
-
-
-
-
 
