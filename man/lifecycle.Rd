@@ -16,5 +16,5 @@ the text you can copy and paste to readme.md
 add the badge to your repo's readme doc.
 }
 \examples{
- lifecycle("experimental")
+lifecycle("experimental")
 }

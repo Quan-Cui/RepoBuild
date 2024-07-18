@@ -2,7 +2,9 @@
 
 export(chatty)
 export(create.repo)
+export(create_subdirs)
 export(lifecycle)
+export(update_gitignore)
 importFrom(dplyr,slice_sample)
 importFrom(magrittr,"%>%")
 importFrom(usethis,create_project)

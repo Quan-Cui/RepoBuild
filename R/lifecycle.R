@@ -7,7 +7,7 @@
 #' @return the text you can copy and paste to readme.md
 #' @export
 #'
-#' @examples  lifecycle("experimental")
+#' @examples lifecycle("experimental")
 lifecycle <- function(lifecycle) {
   valid_lifecycles <- c("experimental", "maturing", "stable", "dormant", "retired")
 
