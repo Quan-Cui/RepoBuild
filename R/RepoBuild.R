@@ -1,4 +1,4 @@
-#' create.repo
+#' RepoBuild
 #'
 #' Create a folder structure within your project path.including data, input, output, R etc.
 #'
@@ -10,9 +10,9 @@
 #'
 #' @examples
 #' \dontrun{
-#' create.repo("~/myproject")
+#' RepoBuild("~/myproject")
 #' }
-create.repo <- function(proj_folder = here::here()) {
+RepoBuild <- function(proj_folder = here::here()) {
   invisible(
     if (!dir.exists(proj_folder)) {
       dir.create(proj_folder)
