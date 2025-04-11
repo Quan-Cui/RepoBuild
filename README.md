@@ -17,14 +17,14 @@ RepoBuild is a simple R package that helps you quickly set up a standardized pro
 The function `RepoBuild("path/to/RepoFolder")` will create the following structure in the specified folder:
 
 RepoFolder/\
-├── RepoFolder.Rproj \# RStudio project file\
-├── R/ \# R scripts\
-├── data/ \# Raw or cleaned data\
-├── input/ \# Input files (e.g., CSVs, Excel)\
-├── output/ \# Output folder\
-│ ├── figures/ \# Figures and plots\
-│ └── tables/ \# Exported tables\
-└── instructions/ \# Notes or instructions
+├── RepoFolder.Rproj \# RStudio project file  
+├── R/ \# R scripts  
+├── data/ \# Raw or cleaned data  
+├── input/ \# Input files (e.g., CSVs, Excel)  
+├── output/ \# Output folder  
+│ ├── figures/ \# Figures and plots  
+│ └── tables/ \# Exported tables  
+└── instructions/ \# Notes or instructions  
 
 ### .gitignore Initialization
 
