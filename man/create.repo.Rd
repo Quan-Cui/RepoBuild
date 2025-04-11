@@ -16,5 +16,7 @@ a folder full with sub folders for R project developing use
 Create a folder structure within your project path.including data, input, output, R etc.
 }
 \examples{
-create.repo("C:/myproject")
+\dontrun{
+create.repo("~/myproject")
+}
 }

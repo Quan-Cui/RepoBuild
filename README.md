@@ -1,11 +1,38 @@
-# EngRepo
+# RepoBuild
 
-<!-- badges: start -->
+## 📦 How to Install This Package
+You can install RepoBuild directly from GitHub using the devtools package:
 
-[![R-CMD-check](https://github.com/Quan-Cui/EngRepo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Quan-Cui/EngRepo/actions/workflows/R-CMD-check.yaml)
-[![Codecov test coverage](https://codecov.io/gh/Quan-Cui/EngRepo/graph/badge.svg)](https://app.codecov.io/gh/Quan-Cui/EngRepo)
-<!-- badges: end -->
+```
+devtools::install_github("Quan-Cui/RepoBuild")
+```
 
-![](https://img.shields.io/badge/Lifecycle-Maturing-007EC6)
 
-> To install this package devtools::install_github("Quan-Cui/EngRepo")
+## 📁 About RepoBuild
+
+RepoBuild is a simple R package that helps you quickly set up a standardized project folder structure.
+
+### 🔧 What It Does
+The function create.repo("path/to/RepoFolder") will create the following structure in the specified folder:
+
+RepoFolder/
+├── RepoFolder.Rproj       # RStudio project file
+├── R/                     # R scripts
+├── data/                  # Raw or cleaned data
+├── input/                 # Input files (e.g., CSVs, Excel)
+├── output/                # Output folder
+│   ├── figures/           # Figures and plots
+│   └── tables/            # Exported tables
+└── instructions/          # Notes or instructions
+
+###  .gitignore Initialization
+The function also creates a .gitignore file with the following default content:
+
+.Rproj.user
+.Rhistory
+*log*
+
+You can modify this file as needed for your project.
+
+> Note: Git does not track empty folders by default, so folders will only be included once they contain files.
+

@@ -1,5 +1,5 @@
-Package: EngRepo
-Title: Create EngRepository
+Package: RepoBuild
+Title: Build Repository Folder
 Version: 0.0.0.9000
 Authors@R: 
     person("Quan", "Cui", , "quancuiwork@gmail.com", role = c("aut", "cre"),

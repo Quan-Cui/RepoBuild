@@ -8,7 +8,10 @@
 #' @importFrom usethis create_project
 #' @export
 #'
-#' @examples create.repo("C:/myproject")
+#' @examples
+#' \dontrun{
+#' create.repo("~/myproject")
+#' }
 create.repo <- function(proj_folder = here::here()) {
   invisible(
     if (!dir.exists(proj_folder)) {
