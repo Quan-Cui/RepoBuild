@@ -33,8 +33,8 @@ RepoFolder/
 The function also creates a .gitignore file with the following default content:
 
 ```
-.Rproj.user\
-.Rhistory\
+.Rproj.user
+.Rhistory
 *log*
 ```
 
