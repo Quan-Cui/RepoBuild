@@ -4,10 +4,10 @@
 \alias{RepoBuild}
 \title{RepoBuild}
 \usage{
-RepoBuild(proj_folder = here::here())
+RepoBuild(proj_folder)
 }
 \arguments{
-\item{proj_folder}{R project folder name, default here::here()}
+\item{proj_folder}{Complete path to the R project folder with folder name}
 }
 \value{
 a folder full with sub folders for R project developing use
@@ -17,6 +17,6 @@ Create a folder structure within your project path.including data, input, output
 }
 \examples{
 \dontrun{
-create.repo("~/myproject")
+RepoBuild("C:/myproject1")
 }
 }

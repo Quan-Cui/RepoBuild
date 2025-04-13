@@ -13,7 +13,6 @@ Imports:
     dplyr,
     magrittr,
     jsonlite,
-    usethis,
-    here
+    usethis
 URL: https://github.com/Quan-Cui/RepoBuild
 BugReports: https://github.com/Quan-Cui/RepoBuild/issues
