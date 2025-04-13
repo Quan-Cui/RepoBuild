@@ -1,8 +1,8 @@
 Package: RepoBuild
 Title: Build Repository Folder
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
-    person("Quan", "Cui", , "quancuiwork@gmail.com", role = c("aut", "cre"),
+    person("Quan", "Cui", , "quancuiwork@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-2031-1581"))
 Description: Create sub folders for R project developing use.
 License: MIT + file LICENSE
@@ -15,5 +15,5 @@ Imports:
     jsonlite,
     usethis,
     here
-URL: https://github.com/Quan-Cui/EngRepo
-BugReports: https://github.com/Quan-Cui/EngRepo/issues
+URL: https://github.com/Quan-Cui/RepoBuild
+BugReports: https://github.com/Quan-Cui/RepoBuild/issues
