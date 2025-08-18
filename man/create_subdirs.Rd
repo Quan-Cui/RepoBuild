@@ -15,6 +15,3 @@ created some subfolder under the input folder
 \description{
 create_subdirs
 }
-\examples{
-create_subdirs("C:/myproject")
-}

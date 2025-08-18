@@ -15,6 +15,3 @@ a new gitignore file with some default settings
 \description{
 update_gitignore
 }
-\examples{
-update_gitignore("C:/myproject")
-}
