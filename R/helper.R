@@ -39,6 +39,7 @@ create_subdirs_Boral <- function(folder) {
   dir.create(paste0(folder, "/R"))
   dir.create(paste0(folder, "/data"))
   dir.create(paste0(folder, "/input"))
+  dir.create(paste0(folder, "/input/LiDAR"))
   dir.create(paste0(folder, "/output"))
   dir.create(paste0(folder, "/output/GISdata"))
   dir.create(paste0(folder, "/output/GISdata/elevatr"))
