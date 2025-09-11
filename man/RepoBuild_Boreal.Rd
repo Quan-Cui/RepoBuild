@@ -4,7 +4,7 @@
 \alias{RepoBuild_Boreal}
 \title{RepoBuild Boreal}
 \usage{
-RepoBuild_Boreal(proj_folder)
+RepoBuild_Boreal(proj_folder = getwd())
 }
 \arguments{
 \item{proj_folder}{your project folder}

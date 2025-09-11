@@ -12,7 +12,7 @@
 #' \dontrun{
 #' RepoBuild("C:/myproject1")
 #' }
-RepoBuild <- function(proj_folder) {
+RepoBuild <- function(proj_folder = getwd()) {
   invisible(
     if (!dir.exists(proj_folder)) {
       dir.create(proj_folder)
@@ -45,7 +45,7 @@ RepoBuild <- function(proj_folder) {
 #'  \dontrun{
 #' RepoBuild_Boreal("C:/myproject1")
 #' }
-RepoBuild_Boreal <- function(proj_folder){
+RepoBuild_Boreal <- function(proj_folder = getwd()){
   invisible(
     if (!dir.exists(proj_folder)) {
       dir.create(proj_folder)

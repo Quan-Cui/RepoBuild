@@ -4,7 +4,7 @@
 \alias{RepoBuild}
 \title{RepoBuild}
 \usage{
-RepoBuild(proj_folder)
+RepoBuild(proj_folder = getwd())
 }
 \arguments{
 \item{proj_folder}{Complete path to the R project folder with folder name}
