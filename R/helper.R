@@ -23,7 +23,7 @@ create_subdirs <- function(folder) {
 update_gitignore <- function(folder) {
   gitignore_path <- paste0(folder, "/", ".gitignore")
   if (file.exists(gitignore_path)) {
-    writeLines(c(".Rproj.user", ".Rhistory", "*log*"), con = gitignore_path)
+    writeLines(c(".Rproj.user", ".Rhistory", "*log*", ".tif"), con = gitignore_path)
   }
 }
 
@@ -50,6 +50,7 @@ create_subdirs_Boral <- function(folder) {
   dir.create(paste0(folder, "/", "HEC-RAS"))
   dir.create(paste0(folder, "/", "HY-8"))
   dir.create(paste0(folder, "/", "Flow Profile"))
+  dir.create(paste0(folder, "/", "stationdata"))
 }
 
 
