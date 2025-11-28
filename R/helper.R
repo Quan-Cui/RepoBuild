@@ -23,7 +23,7 @@ create_subdirs <- function(folder) {
 update_gitignore <- function(folder) {
   gitignore_path <- paste0(folder, "/", ".gitignore")
   if (file.exists(gitignore_path)) {
-    writeLines(c(".Rproj.user", ".Rhistory", "*log*", ".tif"), con = gitignore_path)
+    writeLines(c(".Rproj.user", ".Rhistory", "*log*", "*.tif", "*.adf"), con = gitignore_path)
   }
 }
 
